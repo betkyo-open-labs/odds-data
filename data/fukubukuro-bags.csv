@@ -1,0 +1,16 @@
+bag,item,glyph,rarity,weight_millionths,chance,multiplier
+ume,TENUGUI,手拭,common,450000,0.45,0.2
+ume,OMAMORI,御守,common,290000,0.29,0.5
+ume,MANEKI-NEKO,招,uncommon,140000,0.14,1
+ume,DARUMA,達磨,uncommon,70000,0.07,2
+ume,KOINOBORI,鯉,rare,32000,0.032,5
+ume,SENSU,扇,rare,12600,0.0126,10
+ume,KATANA,刀,epic,5000,0.005,25
+ume,GOLDEN MANEKI,金招,legendary,400,0.0004,100
+matsu,HASHI,箸,common,580000,0.58,0.1
+matsu,FURIN,風鈴,common,260000,0.26,0.5
+matsu,KITSUNE MEN,面,uncommon,19800,0.0198,1
+matsu,CHOCHIN,提灯,uncommon,85000,0.085,2
+matsu,KABUTO,兜,rare,40000,0.04,6
+matsu,RYU,龍,epic,15000,0.015,20
+matsu,HOO,鳳凰,legendary,200,0.0002,250

@@ -1,0 +1,10 @@
+key,bet,pockets_covered,multiplier,covered_x_multiplier,return
+n,straight,1,36,36,0.972973
+sp,split,2,18,36,0.972973
+st,street,3,12,36,0.972973
+co,corner,4,9,36,0.972973
+sl,six line,6,6,36,0.972973
+f4,first four,4,9,36,0.972973
+dz,dozen,12,3,36,0.972973
+col,column,12,3,36,0.972973
+ev,even chance,18,2,36,0.972973

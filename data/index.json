@@ -1,0 +1,50 @@
+{
+ "publisher": "Betkyo Journal",
+ "url": "https://betkyo.com/data/index.json",
+ "license": "CC BY 4.0",
+ "note": "Tables read from the game engine source; every file names the module it was exported from and the article that derives it.",
+ "files": [
+  {
+   "name": "keno-paytables",
+   "description": "Keno payout multipliers (total return) for every level, pick count and hit count — the forty tables the engine displays",
+   "json": "/data/keno-paytables.json",
+   "csv": "/data/keno-paytables.csv",
+   "article": "https://betkyo.com/en/blog/what-a-keno-risk-level-changes/"
+  },
+  {
+   "name": "plinko-multipliers",
+   "description": "Plinko bucket multipliers for every risk level and row count (buckets left to right)",
+   "json": "/data/plinko-multipliers.json",
+   "csv": "/data/plinko-multipliers.csv",
+   "article": "https://betkyo.com/en/blog/plinko-priced-the-binomial-behind-every-board/"
+  },
+  {
+   "name": "fukubukuro-bags",
+   "description": "Fukubukuro item weights (millionths of the roll) and payout multiples for both bags",
+   "json": "/data/fukubukuro-bags.json",
+   "csv": "/data/fukubukuro-bags.csv",
+   "article": "https://betkyo.com/en/blog/designing-fukubukuro-the-lucky-bag-that-always-pays-something/"
+  },
+  {
+   "name": "koban-ladder",
+   "description": "Koban Flip cumulative multiplier after n straight correct calls (floored to cents) and the fair-coin chance of reaching it",
+   "json": "/data/koban-ladder.json",
+   "csv": "/data/koban-ladder.csv",
+   "article": "https://betkyo.com/en/blog/designing-koban-flip-every-face-is-fixed-when-you-buy-the-coin/"
+  },
+  {
+   "name": "roulette-bets",
+   "description": "Roulette bet kinds with pockets covered, total-return multiplier and expected return on the 37-pocket wheel; wheel order and red pockets",
+   "json": "/data/roulette-bets.json",
+   "csv": "/data/roulette-bets.csv",
+   "article": "https://betkyo.com/en/blog/a-roulette-bet-is-a-string-self-describing-keys-and-the-36-table/"
+  },
+  {
+   "name": "blackjack-dealer-outcomes",
+   "description": "Dealer final-total distribution by upcard on an infinite shoe with the dealer standing on all 17s (exact recursion)",
+   "json": "/data/blackjack-dealer-outcomes.json",
+   "csv": "/data/blackjack-dealer-outcomes.csv",
+   "article": "https://betkyo.com/en/blog/dealer-bust-odds-by-upcard-on-an-infinite-shoe/"
+  }
+ ]
+}

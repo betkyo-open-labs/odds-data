@@ -1,0 +1,133 @@
+{
+ "name": "fukubukuro-bags",
+ "description": "Fukubukuro item weights (millionths of the roll) and payout multiples for both bags",
+ "source": "fuku/derive.ts UME_ITEMS, MATSU_ITEMS",
+ "article": "https://betkyo.com/en/blog/designing-fukubukuro-the-lucky-bag-that-always-pays-something/",
+ "license": "CC BY 4.0",
+ "publisher": "Betkyo Journal",
+ "url": "https://betkyo.com/data/fukubukuro-bags.json",
+ "generated": "2026-09-12",
+ "data": [
+  {
+   "id": "ume",
+   "name": "UME",
+   "glyph": "梅",
+   "pitch": "the balanced bag — steady pulls, ×100 on top",
+   "items": [
+    {
+     "glyph": "手拭",
+     "name": "TENUGUI",
+     "mult100": 20,
+     "weight": 450000,
+     "rarity": "common"
+    },
+    {
+     "glyph": "御守",
+     "name": "OMAMORI",
+     "mult100": 50,
+     "weight": 290000,
+     "rarity": "common"
+    },
+    {
+     "glyph": "招",
+     "name": "MANEKI-NEKO",
+     "mult100": 100,
+     "weight": 140000,
+     "rarity": "uncommon"
+    },
+    {
+     "glyph": "達磨",
+     "name": "DARUMA",
+     "mult100": 200,
+     "weight": 70000,
+     "rarity": "uncommon"
+    },
+    {
+     "glyph": "鯉",
+     "name": "KOINOBORI",
+     "mult100": 500,
+     "weight": 32000,
+     "rarity": "rare"
+    },
+    {
+     "glyph": "扇",
+     "name": "SENSU",
+     "mult100": 1000,
+     "weight": 12600,
+     "rarity": "rare"
+    },
+    {
+     "glyph": "刀",
+     "name": "KATANA",
+     "mult100": 2500,
+     "weight": 5000,
+     "rarity": "epic"
+    },
+    {
+     "glyph": "金招",
+     "name": "GOLDEN MANEKI",
+     "mult100": 10000,
+     "weight": 400,
+     "rarity": "legendary"
+    }
+   ]
+  },
+  {
+   "id": "matsu",
+   "name": "MATSU",
+   "glyph": "松",
+   "pitch": "the wild bag — harsher floor, ×250 hiding inside",
+   "items": [
+    {
+     "glyph": "箸",
+     "name": "HASHI",
+     "mult100": 10,
+     "weight": 580000,
+     "rarity": "common"
+    },
+    {
+     "glyph": "風鈴",
+     "name": "FURIN",
+     "mult100": 50,
+     "weight": 260000,
+     "rarity": "common"
+    },
+    {
+     "glyph": "面",
+     "name": "KITSUNE MEN",
+     "mult100": 100,
+     "weight": 19800,
+     "rarity": "uncommon"
+    },
+    {
+     "glyph": "提灯",
+     "name": "CHOCHIN",
+     "mult100": 200,
+     "weight": 85000,
+     "rarity": "uncommon"
+    },
+    {
+     "glyph": "兜",
+     "name": "KABUTO",
+     "mult100": 600,
+     "weight": 40000,
+     "rarity": "rare"
+    },
+    {
+     "glyph": "龍",
+     "name": "RYU",
+     "mult100": 2000,
+     "weight": 15000,
+     "rarity": "epic"
+    },
+    {
+     "glyph": "鳳凰",
+     "name": "HOO",
+     "mult100": 25000,
+     "weight": 200,
+     "rarity": "legendary"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "name": "koban-ladder",
+ "description": "Koban Flip cumulative multiplier after n straight correct calls (floored to cents) and the fair-coin chance of reaching it",
+ "source": "koban/derive.ts KOBAN_WIN_100, KOBAN_MAX_FLIPS",
+ "article": "https://betkyo.com/en/blog/designing-koban-flip-every-face-is-fixed-when-you-buy-the-coin/",
+ "license": "CC BY 4.0",
+ "publisher": "Betkyo Journal",
+ "url": "https://betkyo.com/data/koban-ladder.json",
+ "generated": "2026-09-12",
+ "data": {
+  "perCall": 1.96,
+  "maxFlips": 10,
+  "ladder": [
+   {
+    "wins": 1,
+    "multiplier": 1.96,
+    "chance": 0.5
+   },
+   {
+    "wins": 2,
+    "multiplier": 3.84,
+    "chance": 0.25
+   },
+   {
+    "wins": 3,
+    "multiplier": 7.52,
+    "chance": 0.125
+   },
+   {
+    "wins": 4,
+    "multiplier": 14.75,
+    "chance": 0.0625
+   },
+   {
+    "wins": 5,
+    "multiplier": 28.92,
+    "chance": 0.03125
+   },
+   {
+    "wins": 6,
+    "multiplier": 56.69,
+    "chance": 0.015625
+   },
+   {
+    "wins": 7,
+    "multiplier": 111.12,
+    "chance": 0.0078125
+   },
+   {
+    "wins": 8,
+    "multiplier": 217.79,
+    "chance": 0.00390625
+   },
+   {
+    "wins": 9,
+    "multiplier": 426.87,
+    "chance": 0.001953125
+   },
+   {
+    "wins": 10,
+    "multiplier": 836.68,
+    "chance": 0.0009765625
+   }
+  ]
+ }
+}
