@@ -1,5 +1,7 @@
 # Betkyo odds data
 
+![What a keno risk level actually changes](docs/cover.webp)
+
 Machine-readable tables behind the [Betkyo Journal](https://betkyo.com/en/blog/), exported from the game engine source rather than typed by hand. Each file names the engine module it was read from and the article that derives the figures. Canonical copies: `https://betkyo.com/data/<name>.json` and `.csv`; `https://betkyo.com/data/index.json` lists them.
 
 | File | What it is | Derivation |
@@ -11,7 +13,26 @@ Machine-readable tables behind the [Betkyo Journal](https://betkyo.com/en/blog/)
 | `koban-ladder` | Koban Flip cumulative multiplier after n straight calls, floored to cents | [Designing Koban Flip](https://betkyo.com/en/blog/designing-koban-flip-every-face-is-fixed-when-you-buy-the-coin/) |
 | `fukubukuro-bags` | Item weights (millionths) and payout multiples for both lucky bags | [Designing Fukubukuro](https://betkyo.com/en/blog/designing-fukubukuro-the-lucky-bag-that-always-pays-something/) |
 
-The procedure behind every figure, including the times it found bugs in the games themselves: [How the Journal verifies a number](https://betkyo.com/en/blog/how-the-journal-verifies-a-number-methodology/). The scripts that turn these tables into the returns quoted in the articles live in the `odds-derivations` repository; the round verifier in `provably-fair-verifier`.
+## Using the files
+
+Every JSON file carries its own provenance (`source` names the engine module, `article` the derivation, `generated` the export date) and a `data` object; the CSV next to it is the same table flattened. `data/index.json` lists them all.
+
+```bash
+# dealer bust chance with a 6 showing, straight from the table
+node -e "const t=require('./data/blackjack-dealer-outcomes.json').data.table; console.log(t.find(r=>r.upcard==='6').bust)"
+# 0.4231...
+
+# the 16-row HIGH Plinko board
+node -e "console.log(require('./data/plinko-multipliers.json').data.HIGH['16'].join(' '))"
+# 1000 130 26 9 4 2 0.2 0.2 0.2 0.2 0.2 2 4 9 26 130 1000
+```
+
+```python
+import pandas as pd
+keno = pd.read_csv("https://raw.githubusercontent.com/betkyo-open-labs/odds-data/main/data/keno-paytables.csv")
+```
+
+The procedure behind every figure, including the times it found bugs in the games themselves: [How the Journal verifies a number](https://betkyo.com/en/blog/how-the-journal-verifies-a-number-methodology/). The scripts that turn these tables into the returns quoted in the articles live in [odds-derivations](https://github.com/betkyo-open-labs/odds-derivations); the round verifier in [provably-fair-verifier](https://github.com/betkyo-open-labs/provably-fair-verifier).
 
 Licence: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribute as "Betkyo Journal, betkyo.com/data". Corrections: dev@betkyo.com.
 
