@@ -2,6 +2,8 @@
 
 ![What a keno risk level actually changes](docs/cover.webp)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22725012.svg)](https://doi.org/10.5281/zenodo.22725012) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Hugging Face](https://img.shields.io/badge/Hugging_Face-Betkyo%2Fodds--data-yellow)](https://huggingface.co/datasets/Betkyo/odds-data) [![Kaggle](https://img.shields.io/badge/Kaggle-dataset-20BEFF)](https://www.kaggle.com/datasets/betkyo/betkyo-odds-data-casino-paytables-from-source)
+
 Machine-readable tables behind the [Betkyo Journal](https://betkyo.com/en/blog/), exported from the game engine source rather than typed by hand. Each file names the engine module it was read from and the article that derives the figures. Canonical copies: `https://betkyo.com/data/<name>.json` and `.csv`; `https://betkyo.com/data/index.json` lists them.
 
 | File | What it is | Derivation |
@@ -33,6 +35,14 @@ keno = pd.read_csv("https://raw.githubusercontent.com/betkyo-open-labs/odds-data
 ```
 
 The procedure behind every figure, including the times it found bugs in the games themselves: [How the Journal verifies a number](https://betkyo.com/en/blog/how-the-journal-verifies-a-number-methodology/). The scripts that turn these tables into the returns quoted in the articles live in [odds-derivations](https://github.com/betkyo-open-labs/odds-derivations); the round verifier in [provably-fair-verifier](https://github.com/betkyo-open-labs/provably-fair-verifier).
+
+## Citing
+
+Archived, versioned copy with a DOI on Zenodo: [10.5281/zenodo.22725012](https://doi.org/10.5281/zenodo.22725012) (concept DOI for all versions: 10.5281/zenodo.22725011). A `CITATION.cff` is included; GitHub's "Cite this repository" button reads it.
+
+> Betkyo Research (2026). *Betkyo odds data: casino paytables and outcome distributions exported from game engine source* (1.0.0) [Data set]. Betkyo Journal. https://doi.org/10.5281/zenodo.22725012
+
+Also mirrored on [Hugging Face](https://huggingface.co/datasets/Betkyo/odds-data) and [Kaggle](https://www.kaggle.com/datasets/betkyo/betkyo-odds-data-casino-paytables-from-source).
 
 Licence: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribute as "Betkyo Journal, betkyo.com/data". Corrections: dev@betkyo.com.
 

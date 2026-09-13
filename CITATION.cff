@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use these tables, please cite them as below."
+title: "Betkyo odds data: casino paytables and outcome distributions exported from game engine source"
+type: dataset
+version: 1.0.0
+date-released: 2026-09-12
+doi: 10.5281/zenodo.22725012
+license: CC-BY-4.0
+url: https://betkyo.com/data/
+repository-code: https://github.com/betkyo-open-labs/odds-data
+authors:
+  - name: "Betkyo Research"
+    email: dev@betkyo.com
+    website: https://betkyo.com/en/blog/
+keywords:
+  - casino
+  - paytables
+  - house edge
+  - provably fair
+  - keno
+  - plinko
+  - blackjack
+  - roulette
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22725011
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.22725012
+    description: "Version 1.0.0"
